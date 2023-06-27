@@ -1,0 +1,24 @@
+Admin :
+username = Admin
+password = password123
+
+
+Customer :
+username = Faisal
+password = customer01
+-------------------------
+username = Ellen
+password = customer02
+
+
+Manager :
+username = Fiona
+password = manager01
+
+
+Delivery crew :
+username = Jason
+password = dc01
+-
+username = Yuta
+password = DC02

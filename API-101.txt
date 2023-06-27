@@ -1,0 +1,24 @@
+User registration and token generation endpoints (POST)
+Endpoint = /api/users/ | Payload = "username", "email", "password"
+Endpoint = /token/login/ | Payload = "username", "password"
+----------------------------------------------------------------
+Menu-items endpoints (POST, PUT, PATCH)
+Endpoint = /api/menu-items/ | Payload = "title", "price", "feature", "category_id"
+Endpoint = /api/menu-items/{menuItem} | Payload = "title", "price", "feature", "category_id"
+------------------------------------------------------------------
+User group management endpoints (POST)
+Endpoint = /api/groups/manager/users | Payload = "username", "email", "password"
+Endpoint = /api/groups/delivery-crew/users | Payload = "username", "email", "password"
+Note :
+"You can create a new user and assign them to a group, or assign an existing user to a group."
+--------------------------------------------------------------------
+Cart management endpoints 
+Endpoint = /api/cart/menu-items | Payload = "menuitem_id", "quantity"
+Note :
+"The fields unit_price, price, and user are automatically filled."
+-------------------------------------------------------------------
+Order management endpoints (POST, PUT, PATCH)
+Endpoint = /api/orders
+Endpoint = /api/orders/{orderId}/ | Payload = "delivery_crew" (int), "status"
+Note :
+"For Post method it's automatically filled make sure the user's cart is not empty"
